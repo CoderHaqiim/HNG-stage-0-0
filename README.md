@@ -1,12 +1,17 @@
 <b><h1>Overview</h1></b>
 <b><h2>Description</h2></b>
 <p>
-  This API provides a simple endpoint to retrieve user details, including email, current datetime in UTC format, and GitHub repository URL. It is built using Node.js and the built-in http module. HNG backend track task for stage-0.
+  This API provides a simple endpoint to retrieve user details, including email, current datetime in UTC format, and GitHub repository URL. It is built using Node.js and the   built-in http module. 
+ 
+  This project is a stage 0 project for the backend track of the HNG internship. 
+  HNG is a platform that helps aspiring software developers sharpen their skills and train them to write industry standard code. HNG produces developers that are competent     and great problem solvers. If you are looking to hire Nodejs developers, you should explore the pool of talented HNG Nodejs developers 
+  <a href="https://hng.tech/hire/nodejs-developers">HIRE NODEJS DEVELOPERS</a>.
+
 </p>
 
 <b><h2>Base URL</h2></b>
 <p>
-  https://localhost:8080
+  https://hng-stage-0-0.onrender.com/
 </p>
 
 <b><h2>End points</h2></b>
@@ -26,6 +31,24 @@
     "current_datetime": "new Date().toISOString()", 
     "github_url": "https://github.com/CoderHaqiim/HNG-stage-0-0"
   }
+</pre>
+
+<b><h4>Usage</h4></b>
+  <pre>
+    async function fetchData() {
+      try {
+        const URL = ""
+        const response = await fetch('URL');
+  
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+     } catch (error) {
+        console.error('Fetch error:', error);
+    }
+  }
+fetchData();
 </pre>
 
 <b><h3>Invalid route</h3></b>
